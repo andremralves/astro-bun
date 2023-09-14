@@ -1,0 +1,32 @@
+{
+  "name": "astro-bun-adapter",
+  "version": "0.0.1",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andremralves/astro-bun-adapter.git"
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./server.ts": "./src/server.ts",
+    "./package.json": "./package.json"
+  },
+  "license": "MIT",
+  "scripts": {
+    "format": "prettier -w \"**/*\" --ignore-unknown --cache"
+  },
+  "keywords": [
+    "astro-adapter"
+  ],
+  "devDependencies": {
+    "bun-types": "latest",
+    "prettier": "^3.0.3",
+    "prettier-plugin-astro": "^0.12.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "astro": "^3.0.13"
+  }
+}
