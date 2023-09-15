@@ -1,11 +1,11 @@
 {
   "name": "astro-bun",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "types": "./dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/andremralves/astro-bun-adapter.git"
+    "url": "https://github.com/andremralves/astro-bun.git"
   },
   "exports": {
     ".": "./dist/index.js",
@@ -25,12 +25,11 @@
     "bun-types": "latest",
     "prettier": "^3.0.3",
     "prettier-plugin-astro": "^0.12.0",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "astro": "^3.0.13"
   },
   "peerDependencies": {
-    "typescript": "^5.0.0"
-  },
-  "dependencies": {
+    "typescript": "^5.0.0",
     "astro": "^3.0.13"
   }
 }

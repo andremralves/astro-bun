@@ -4,7 +4,7 @@ import { Options } from "./types";
 
 export function getAdapter(args?: Options): AstroAdapter {
   return {
-    name: "astro-bun-adapter",
+    name: "astro-bun",
     serverEntrypoint: "astro-bun/server.js",
     args: args ?? {},
     exports: ["stop", "handle", "start", "running"],
@@ -23,17 +23,17 @@ export function getAdapter(args?: Options): AstroAdapter {
 
 export default function createIntegration(args?: Options): AstroIntegration {
   return {
-    name: "astro-bun-adapter",
+    name: "astro-bun",
     hooks: {
       "astro:config:done": ({ setAdapter, config }) => {
         setAdapter(getAdapter(args));
 
         if (config.output === "static") {
           console.warn(
-            `[astro-bun-adapter] \`output: "server"\` or \`output: "hybrid"\` is required to use this adapter.`,
+            `[astro-bun] \`output: "server"\` or \`output: "hybrid"\` is required to use this adapter.`,
           );
           console.warn(
-            `[astro-bun-adapter] Otherwise, this adapter is not required to deploy a static site to Bun.`,
+            `[astro-bun] Otherwise, this adapter is not required to deploy a static site to Bun.`,
           );
         }
       },
