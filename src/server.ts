@@ -42,7 +42,7 @@ export function start(manifest: SSRManifest, options: Options) {
     },
   });
 
-  logger.info(`Bun server listening on port ${_server.port}`);
+  logger.info(`Bun server listening on port ${_server.port}`)
 }
 
 export function createExports(manifest: SSRManifest, options: Options) {
