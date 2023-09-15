@@ -5,7 +5,7 @@ import { Options } from "./types";
 export function getAdapter(args?: Options): AstroAdapter {
   return {
     name: "astro-bun-adapter",
-    serverEntrypoint: "astro-bun-adapter/server.ts",
+    serverEntrypoint: "astro-bun/server.js",
     args: args ?? {},
     exports: ["stop", "handle", "start", "running"],
     supportedAstroFeatures: {
