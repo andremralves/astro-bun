@@ -1,5 +1,7 @@
 # astro-bun
 
+This adapter allows Astro to run your SSR site with the Bun's native API `Bun.serve`.
+
 ## Prerequisites
 
 - Bun
