@@ -1,6 +1,6 @@
 {
   "name": "astro-bun",
-  "version": "0.0.4-beta",
+  "version": "0.0.5-beta",
   "type": "module",
   "types": "./dist/index.d.ts",
   "repository": {
