@@ -1,6 +1,5 @@
-import { AstroAdapter, AstroIntegration } from "astro";
-
-import { Options } from "./types";
+import type { AstroAdapter, AstroIntegration } from "astro";
+import type { Options } from "./types";
 
 export function getAdapter(args?: Options): AstroAdapter {
   return {

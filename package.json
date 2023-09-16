@@ -12,7 +12,9 @@
     "./server.js": "./dist/server.js",
     "./package.json": "./package.json"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "license": "MIT",
   "scripts": {
     "build": "bun ./scripts/build.js && tsc",
@@ -31,5 +33,8 @@
   "peerDependencies": {
     "typescript": "^5.0.0",
     "astro": "^3.0.13"
+  },
+  "dependencies": {
+    "esbuild": "^0.19.3"
   }
 }

@@ -1,16 +1,19 @@
 # astro-bun
-## Prerequisites 
+
+## Prerequisites
 
 - Bun
 
 ## Installation
 
 1. Install `astro-bun` package
+
 ```bash
 bun add astro-bun
 ```
 
 2. Update your `astro.config.mjs` to use `astro-bun` adapter.
+
 ```bash
 // astro.config.mjs
 import { defineConfig } from 'astro/config';
@@ -54,5 +57,5 @@ or, you can update the `preview` script in you `package.json`.
 and then just run:
 
 ```bash
-bunx --bun astro preview 
+bunx --bun astro preview
 ```

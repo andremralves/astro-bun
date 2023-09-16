@@ -1,7 +1,7 @@
-import { SSRManifest } from "astro";
+import type { SSRManifest } from "astro";
 import { App } from "astro/app";
-import { Options } from "./types";
-import { Server } from "bun";
+import type { Options } from "./types";
+import type { Server } from "bun";
 
 let _server: Server | undefined = undefined;
 
@@ -42,7 +42,7 @@ export function start(manifest: SSRManifest, options: Options) {
     },
   });
 
-  logger.info(`Bun server listening on port ${_server.port}`)
+  logger.info(`Bun server listening on port ${_server.port}`);
 }
 
 export function createExports(manifest: SSRManifest, options: Options) {
